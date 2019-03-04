@@ -8,12 +8,14 @@ public class Hazard : MonoBehaviour
     public float damageCooldown;
     bool cooldownActive;
 
-    private void OnTriggerEnter(Collider other)
+    public GameObject eventSystem;
+
+    void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player" && cooldownActive == false)
         {
-            other.GetComponent<PlayerHealth>().Damage(damage);
             cooldownActive = true;
+            eventSystem.GetComponent<PlayerHealth>().Damage(damage);
             StartCoroutine(startCooldown());
         }
     }

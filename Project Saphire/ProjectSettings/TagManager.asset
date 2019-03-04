@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Boss Room
+  - Enemy
+  - Room 1
   layers:
   - Default
   - TransparentFX

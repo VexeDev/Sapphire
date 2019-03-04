@@ -31,12 +31,13 @@ public class BruteAI : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("isIdle", true);
+        agent.stoppingDistance = attackDistance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.position - this.transform.position;
+        Vector3 direction = player.transform.position - this.transform.position;
         direction.y = 0;
 
         Vector3 target = player.transform.position;
@@ -58,7 +59,7 @@ public class BruteAI : MonoBehaviour
                 anim.SetBool("slash2", false);
                 anim.SetBool("isWalking", true);
                 pursuing = true;
-            } else
+            } else if(direction.magnitude <= attackDistance)
             {
                 isIdle = false;
                 //attack

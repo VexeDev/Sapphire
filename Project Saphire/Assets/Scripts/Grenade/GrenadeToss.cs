@@ -10,6 +10,9 @@ public class GrenadeToss : MonoBehaviour
 
     public bool canToss;
 
+    public float upForce;
+    public float sideForce;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,8 @@ public class GrenadeToss : MonoBehaviour
         GameObject newGrenade = Instantiate(grenade, transform.position, transform.rotation);
         Rigidbody rb = newGrenade.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        rb.AddTorque(transform.up * upForce, ForceMode.VelocityChange);
+        rb.AddTorque(transform.right * sideForce, ForceMode.VelocityChange);
     }
 
 }

@@ -7,8 +7,13 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public int currentHealth;
-    public int maximumHealth = 100;
+    public int maximumHealth = 101;
     public GameObject player;
+
+    float animationSpeed = 0.075f;
+    public Image healthBar;
+
+    public GameObject playerUI;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +24,13 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float bla = (float)currentHealth / 100;
         if(currentHealth <= 0)
         {
             Die();
         }
+
+        healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, bla,animationSpeed);
     }
 
     public void Damage (int damageAmount)
@@ -36,5 +44,7 @@ public class PlayerHealth : MonoBehaviour
 
         //disable movement
         player.GetComponent<CharacterController>().enabled = false;
+        //disable player ui
+        playerUI.SetActive(false);
     }
 }
