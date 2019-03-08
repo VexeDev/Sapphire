@@ -36,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
     public void Damage (int damageAmount)
     {
         currentHealth = currentHealth - damageAmount;
+        Debug.Log("i should be applying damage");
     }
 
     void Die()

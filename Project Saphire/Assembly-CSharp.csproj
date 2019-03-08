@@ -63,16 +63,20 @@
   <ItemGroup>
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Scripts\Enemies\BruteAI.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Health.cs" />
     <Compile Include="Assets\Scripts\Enemies\StriderAI.cs" />
     <Compile Include="Assets\Scripts\Essentials\Destructible.cs" />
     <Compile Include="Assets\Scripts\Essentials\DoorLock.cs" />
     <Compile Include="Assets\Scripts\Essentials\EnemyLockDoor.cs" />
     <Compile Include="Assets\Scripts\Essentials\Hazard.cs" />
+    <Compile Include="Assets\Scripts\Essentials\Medical.cs" />
     <Compile Include="Assets\Scripts\Grenade\GoAway.cs" />
     <Compile Include="Assets\Scripts\Grenade\Grenade.cs" />
     <Compile Include="Assets\Scripts\Grenade\GrenadeToss.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Player\newPlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Weapons\AutoGun.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponSwitching.cs" />
     <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Shared\Scripts\ProximityActivate.cs" />
@@ -98,6 +102,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Polygonal Particles\Assets\Shaders\GradientBackgroundShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Saphire/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

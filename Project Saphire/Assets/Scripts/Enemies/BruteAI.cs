@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class BruteAI : MonoBehaviour
 {
-    static Animator anim;
+    Animator anim;
 
     public Transform player;
 
@@ -59,6 +59,11 @@ public class BruteAI : MonoBehaviour
                 anim.SetBool("slash2", false);
                 anim.SetBool("isWalking", true);
                 pursuing = true;
+                //face player if it is within a distance that is obviously down a hallway
+                if (direction.magnitude < 10)
+                {
+
+                }
             } else if(direction.magnitude <= attackDistance)
             {
                 isIdle = false;
@@ -96,6 +101,7 @@ public class BruteAI : MonoBehaviour
         anim.SetBool("slash1", true);
         anim.SetBool("slash2", false);
         anim.SetBool("isWalking", false);
+        isMurdering = true;
         StartCoroutine(waitForAttack());
         //attack anim
     }

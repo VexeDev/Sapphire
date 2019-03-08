@@ -15,7 +15,7 @@ public class Hazard : MonoBehaviour
         if(other.tag == "Player" && cooldownActive == false)
         {
             cooldownActive = true;
-            eventSystem.GetComponent<PlayerHealth>().Damage(damage);
+            eventSystem.GetComponent<newPlayerHealth>().Damage(damage);
             StartCoroutine(startCooldown());
         }
     }

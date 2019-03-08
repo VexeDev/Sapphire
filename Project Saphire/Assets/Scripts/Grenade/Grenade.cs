@@ -17,6 +17,10 @@ public class Grenade : MonoBehaviour
 
     public float radius;
 
+    public int newDamage;
+
+    public GameObject fancyEventSystem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,9 +52,38 @@ public class Grenade : MonoBehaviour
 
         foreach (Collider nearbyObject in colliders)
         {
-            //add damage
-        }
+            Rigidbody rb = nearbyObject.gameObject.GetComponent<Rigidbody>();
+            if(rb != null)
+            {
+                if (rb.tag == "Player")
+                {
+                    rb.GetComponent<newPlayerHealth>().Damage(newDamage);
+                }
+            }
 
+            Collider c = nearbyObject.GetComponent<Collider>();
+            if(c != null)
+            {
+                if (c.tag == "Enemy")
+                {
+                    c.GetComponent<Health>().Damage(newDamage);
+                }
+            }
+            if (c != null)
+            {
+                if (c.tag == "Boss Room")
+                {
+                    c.GetComponent<Health>().Damage(newDamage);
+                }
+            }
+            if (c != null)
+            {
+                if (c.tag == "Room 1")
+                {
+                    c.GetComponent<Health>().Damage(newDamage);
+                }
+            }
+        }
         Destroy(gameObject);
     }
 }
