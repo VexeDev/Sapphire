@@ -44,6 +44,7 @@ public class Health : MonoBehaviour
             anim.SetBool("isDead", true);
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(bruteDie());
+            this.GetComponent<BruteAI>().enabled = false;
         }
 
         if(isStrider == true)

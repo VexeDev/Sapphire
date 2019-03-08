@@ -24,10 +24,18 @@ public class AutoGun : MonoBehaviour
 
     public GameObject indicator;
 
+    public GameObject normalCam;
+    public GameObject ADSCam;
+    bool isAiming = false;
+    bool hasAimed = false;
+
+    public Animator anim;
+
     //initialization
     void Start()
     {
         currentAmmo = maxAmmo;
+        anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -59,6 +67,26 @@ public class AutoGun : MonoBehaviour
         {
             Reload();
         }
+
+        if(Input.GetButtonDown ("Fire2"))
+        {
+            isAiming = true;
+        }
+
+        if(Input.GetButtonUp ("Fire2"))
+        {
+            isAiming = false;
+        }
+
+        if (isAiming == true)
+        {
+            Aim();
+        }
+
+        if(isAiming == false)
+        {
+            StopAim();
+        }
     }
 
     void OnEnable()
@@ -68,8 +96,12 @@ public class AutoGun : MonoBehaviour
 
     void Reload ()
     {
-        StartCoroutine(reload());
-        return;
+        if (currentAmmo < maxAmmo)
+        {
+            forceAimQuit();
+            StartCoroutine(reload());
+            return;
+        }
     }
 
     void Shoot ()
@@ -96,6 +128,45 @@ public class AutoGun : MonoBehaviour
         }
     }
 
+    void Aim()
+    {
+        if(hasAimed == false)
+        {
+            hasAimed = true;
+            //turn off normal cam
+            normalCam.GetComponent<Camera>().enabled = false;
+            //turn on new cam
+            ADSCam.GetComponent<Camera>().enabled = true;
+            //play gun zoom anim
+            anim.SetBool("isAiming", true);
+            //play cam zoom anim
+        }
+    }
+
+    void StopAim()
+    {
+        if(hasAimed == true)
+        {
+            hasAimed = false;
+            //play cam unzoom
+            //play gun unzoom
+            anim.SetBool("isAiming", false);
+            //turn off new cam
+            ADSCam.GetComponent<Camera>().enabled = false;
+            //turn on old cam
+            normalCam.GetComponent<Camera>().enabled = true;
+        }
+    }
+
+    void forceAimQuit ()
+    {
+        isAiming = false;
+        anim.SetBool("isAiming", false);
+        hasAimed = false;
+        ADSCam.GetComponent<Camera>().enabled = false;
+        normalCam.GetComponent<Camera>().enabled = true;
+    }
+
     IEnumerator lightTimer ()
     {
         yield return new WaitForSeconds(.05f);
@@ -104,6 +175,7 @@ public class AutoGun : MonoBehaviour
 
     IEnumerator reload ()
     {
+        isAiming = false;
         isReloading = true;
         
         yield return new WaitForSeconds(reloadTime);
