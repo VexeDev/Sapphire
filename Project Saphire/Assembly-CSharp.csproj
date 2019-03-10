@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\Essentials\EnemyLockDoor.cs" />
     <Compile Include="Assets\Scripts\Essentials\Hazard.cs" />
     <Compile Include="Assets\Scripts\Essentials\Medical.cs" />
+    <Compile Include="Assets\Scripts\Event\LevelEnd.cs" />
+    <Compile Include="Assets\Scripts\Event\Pause.cs" />
     <Compile Include="Assets\Scripts\Grenade\GoAway.cs" />
     <Compile Include="Assets\Scripts\Grenade\Grenade.cs" />
     <Compile Include="Assets\Scripts\Grenade\GrenadeToss.cs" />

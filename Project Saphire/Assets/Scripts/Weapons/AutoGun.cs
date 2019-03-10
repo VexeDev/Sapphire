@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AutoGun : MonoBehaviour
 {
@@ -22,28 +23,36 @@ public class AutoGun : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
-    public GameObject indicator;
-
     public GameObject normalCam;
     public GameObject ADSCam;
     bool isAiming = false;
     bool hasAimed = false;
 
-    public Animator anim;
+    Animator anim;
+    Animator camAnim;
+
+    public Text currentAmmoText;
 
     //initialization
     void Start()
     {
         currentAmmo = maxAmmo;
         anim = this.GetComponent<Animator>();
+        camAnim = ADSCam.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        currentAmmoText.text = currentAmmo.ToString();
+
+        if(isReloading == true)
+        {
+            currentAmmoText.text = 0.ToString();
+        }
+
         if (isReloading == true)
         {
-            indicator.SetActive(false);
             return;
         }
 
@@ -54,13 +63,7 @@ public class AutoGun : MonoBehaviour
         }
         if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire) {
             nextTimeToFire = Time.time + 1f/fireRate;
-            indicator.SetActive(false);
             Shoot();
-        }
-
-        if(Time.time >= nextTimeToFire)
-        {
-            indicator.SetActive(true);
         }
 
         if(Input.GetButtonDown("Reload"))
@@ -140,6 +143,7 @@ public class AutoGun : MonoBehaviour
             //play gun zoom anim
             anim.SetBool("isAiming", true);
             //play cam zoom anim
+            camAnim.SetBool("isAiming", true);
         }
     }
 
@@ -149,12 +153,11 @@ public class AutoGun : MonoBehaviour
         {
             hasAimed = false;
             //play cam unzoom
-            //play gun unzoom
             anim.SetBool("isAiming", false);
-            //turn off new cam
-            ADSCam.GetComponent<Camera>().enabled = false;
-            //turn on old cam
-            normalCam.GetComponent<Camera>().enabled = true;
+            //play gun unzoom
+            camAnim.SetBool("isAiming", false);
+            //should wait a few secs before doing this
+            StartCoroutine(unZoomTimer());
         }
     }
 
@@ -182,5 +185,14 @@ public class AutoGun : MonoBehaviour
         currentAmmo = maxAmmo;
 
         isReloading = false;
+    }
+
+    IEnumerator unZoomTimer ()
+    {
+        yield return new WaitForSeconds(.15f);
+        //turn off new cam
+        ADSCam.GetComponent<Camera>().enabled = false;
+        //turn on old cam
+        normalCam.GetComponent<Camera>().enabled = true;
     }
 }

@@ -25,4 +25,5 @@ public class Hazard : MonoBehaviour
         yield return new WaitForSeconds(damageCooldown);
         cooldownActive = false;
     }
+
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class newPlayerHealth : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class newPlayerHealth : MonoBehaviour
     public GameObject player;
 
     float animationSpeed = 0.075f;
-    public Image healthBar;
+    public Slider healthBar;
 
     public GameObject playerUI;
 
@@ -29,7 +30,7 @@ public class newPlayerHealth : MonoBehaviour
             Die();
         }
 
-        healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount, bla, animationSpeed);
+        healthBar.GetComponent<Slider>().value = Mathf.Lerp(healthBar.value, bla, animationSpeed);
     }
 
     public void Damage(int damageAmount)
@@ -45,6 +46,8 @@ public class newPlayerHealth : MonoBehaviour
         player.GetComponent<CharacterController>().enabled = false;
         //disable player ui
         playerUI.SetActive(false);
+        //enable restart info
+        SceneManager.LoadScene(0);
     }
 
     public void Heal (int health)
