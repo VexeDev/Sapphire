@@ -54,10 +54,19 @@ public class Health : MonoBehaviour
             anim.SetBool("isAttacking", false);
             this.GetComponent<StriderAI>().agent.SetDestination(this.transform.position);
             anim.SetBool("isDead", true);
+            this.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(striderDie());
+            this.GetComponent<StriderAI>().enabled = false;
         }
     }
 
     IEnumerator bruteDie ()
+    {
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
+    }
+
+    IEnumerator striderDie ()
     {
         yield return new WaitForSeconds(3f);
         Destroy(gameObject);

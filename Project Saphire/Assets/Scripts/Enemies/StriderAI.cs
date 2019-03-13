@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class StriderAI : MonoBehaviour
 {
 
-    static Animator anim;
+    Animator anim;
     public Transform player;
     public NavMeshAgent agent;
 
@@ -24,7 +24,7 @@ public class StriderAI : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("isIdle", true);
-        Debug.Log("start function finished correctly");
+        agent.stoppingDistance = attackDistance;
     }
 
     // Update is called once per frame
@@ -36,31 +36,32 @@ public class StriderAI : MonoBehaviour
         Vector3 target = player.transform.position;
         Vector3 striderLocation = this.transform.position;
 
-        if (Vector3.Distance(player.position, this.transform.position) < viewRadius)
+        if (Vector3.Distance(player.position, this.transform.position) < viewRadius || pursuing == true)
         {
             //walking and attack
-            if(direction.magnitude > attackDistance)
+            if(direction.magnitude > attackDistance && isJabbing == false)
             {
                 //walk
                 walk();
                 //initial movement
                 agent.SetDestination(target);
-            } else
+            } else if(direction.magnitude <= attackDistance)
             {
                 //attack
                 attack();
             }
         } else
         {
-            //be idle
-            beIdle();
+            if (isJabbing == false)
+            {
+                //be idle
+                beIdle();
+            }
         }
 
         if(isJabbing == true)
         {
             agent.SetDestination(striderLocation);
-            anim.SetBool("isIdle", false);
-            anim.SetBool("isRunning", false);
         }
         if(isIdle == true)
         {
