@@ -12,6 +12,11 @@ public class Pause : MonoBehaviour
     public GameObject weapons;
     public GameObject gameUI;
 
+    private void Start()
+    {
+        closePause();
+    }
+
     // Update is called once per frame
     void Update()
     {

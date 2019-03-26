@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-D:/Extra/Unity Builds/Saphire New/Alpha/00.1.1a/Mac.app
+D:/Extra/Unity Builds/Sapphire New/Alpha/00.1.2a/Mac.app
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Levels/Level 1.unity
@@ -94,7 +94,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.BallUserControl
-f2849d7a5e38903609a31e76ffeeef10 Assembly-CSharp.dll:.WeaponSwitching
+0cad6c7fe3b1a6ac6323d8a3e7a9ca20 Assembly-CSharp.dll:.WeaponSwitching
 e540a01426f9ad59088593bf72bcd255 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectActivator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -203,6 +203,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 219ec6059796d8951d2adcd8505d0dc2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 61faedcd907718913efd3ec146822d0e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.Ball
 a8cd58c1680eb5251e5604e560cf89e9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
+0cdd809bcc210b614e3cc0636ca18bf1 Assembly-CSharp.dll:.AxeWeapon
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 aeefe284b467450dd47430923a13f393 Assembly-CSharp.dll:.AutoGun
 1d9ecffd6fdabf5dcb9e4675cd70d97a Assembly-CSharp.dll:.BruteAI
@@ -215,3 +216,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 b5af80d27fd408a483be12816b998241 Assembly-CSharp.dll:.DoorLock
 369c5b076bcba99834af32cef51fed59 Assembly-CSharp.dll:.GoAway
 47cd05cf11ce8beb2fd9a1522f58f5ec Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+2a2d7b828da8a3c9b45cde8b8c2e6fa1 Assembly-CSharp.dll:.AxeCollision
