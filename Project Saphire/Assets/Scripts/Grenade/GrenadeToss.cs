@@ -13,6 +13,8 @@ public class GrenadeToss : MonoBehaviour
     public float upForce;
     public float sideForce;
 
+    public GameObject greyGrenade;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,14 @@ public class GrenadeToss : MonoBehaviour
         {
             throwGrenade();
             canToss = false;
+        }
+
+        if(canToss == false)
+        {
+            greyGrenade.SetActive(true);
+        } else
+        {
+            greyGrenade.SetActive(false);
         }
     }
 

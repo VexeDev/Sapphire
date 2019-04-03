@@ -22,7 +22,7 @@ public class WeaponSwitching : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
-            if (selectedWeapon == 1 && axe.GetComponent<AxeWeapon>().canSwitch == true)
+            if (selectedWeapon == 1)
             {
                 if (selectedWeapon >= transform.childCount - 1)
                     selectedWeapon = 0;
@@ -38,7 +38,7 @@ public class WeaponSwitching : MonoBehaviour
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
-            if (selectedWeapon == 1 && axe.GetComponent<AxeWeapon>().canSwitch == true)
+            if (selectedWeapon == 1)
             {
                 if (selectedWeapon <= 0)
                     selectedWeapon = transform.childCount - 1;

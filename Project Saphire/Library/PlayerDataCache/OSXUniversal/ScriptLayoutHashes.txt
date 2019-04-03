@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-D:/Extra/Unity Builds/Sapphire New/Alpha/00.1.2a/Mac.app
+D:/Extra/Unity Builds/Sapphire New/Alpha/00.1.3a/Mac.app
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Levels/Level 1.unity
@@ -24,6 +24,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 be8b29ecd05b56bbfb5cc0e39b16c11b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.FirstPerson.FirstPersonController
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 d98df85f950b01ec3b15c2bd96022165 Assembly-CSharp.dll:.Grenade
+f93481e903b07c53210741412b77e587 Assembly-CSharp.dll:.NewAxe
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:.EventSystemChecker
 2da372c514e5aaa9a8373dc01c24eef6 Assembly-CSharp.dll:.EnemyLockDoor
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -95,6 +96,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.BallUserControl
 0cad6c7fe3b1a6ac6323d8a3e7a9ca20 Assembly-CSharp.dll:.WeaponSwitching
+a6049ab04b49d1f1fa7af3ac33da8b4f Assembly-CSharp.dll:.AxeObject
 e540a01426f9ad59088593bf72bcd255 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectActivator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -195,6 +197,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 c933b2cffdb9d1429a103e9d63c523ef Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.DynamicShadowSettings
 8860633d29a22ff64e02e18da3716cdf Assembly-CSharp.dll:UnityTemplateProjects.SimpleCameraController
 03b9ef2ed536e8d6280069f2195174da Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleActivatorMenu
+a892fbdfb6483f058e3897319e679310 Assembly-CSharp.dll:.RefillAxe
 cd9fe52b0643301c60fc4a69d639725e Assembly-CSharp.dll:.Medical
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
@@ -203,11 +206,11 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 219ec6059796d8951d2adcd8505d0dc2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 61faedcd907718913efd3ec146822d0e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.Ball
 a8cd58c1680eb5251e5604e560cf89e9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
-0cdd809bcc210b614e3cc0636ca18bf1 Assembly-CSharp.dll:.AxeWeapon
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 aeefe284b467450dd47430923a13f393 Assembly-CSharp.dll:.AutoGun
 1d9ecffd6fdabf5dcb9e4675cd70d97a Assembly-CSharp.dll:.BruteAI
 a02f439c77ed2745259f10c91b60b531 Assembly-CSharp.dll:.Hazard
+3ec9644cccba9e1f389a04fcfe33149e Assembly-CSharp.dll:.Options
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
@@ -216,4 +219,3 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 b5af80d27fd408a483be12816b998241 Assembly-CSharp.dll:.DoorLock
 369c5b076bcba99834af32cef51fed59 Assembly-CSharp.dll:.GoAway
 47cd05cf11ce8beb2fd9a1522f58f5ec Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-2a2d7b828da8a3c9b45cde8b8c2e6fa1 Assembly-CSharp.dll:.AxeCollision

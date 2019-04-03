@@ -8,6 +8,8 @@ TagManager:
   - Boss Room
   - Enemy
   - Room 1
+  - Shield
+  - ShieldGenerator
   layers:
   - Default
   - TransparentFX

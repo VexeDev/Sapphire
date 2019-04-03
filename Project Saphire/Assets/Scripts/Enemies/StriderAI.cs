@@ -19,6 +19,8 @@ public class StriderAI : MonoBehaviour
 
     public float attackTime;
 
+    public bool attackingShield = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,14 +32,28 @@ public class StriderAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(attackingShield == true)
+        {
+            attack();
+        }
+
         Vector3 direction = player.position - this.transform.position;
         direction.y = 0;
 
         Vector3 target = player.transform.position;
         Vector3 striderLocation = this.transform.position;
 
+        if(isJabbing == true)
+        {
+            agent.SetDestination(striderLocation);
+        }
+
         if (Vector3.Distance(player.position, this.transform.position) < viewRadius || pursuing == true)
         {
+            if(anim.GetBool("isAttacking") == true)
+            {
+                agent.SetDestination(striderLocation);
+            }
             //walking and attack
             if(direction.magnitude > attackDistance && isJabbing == false)
             {
@@ -70,7 +86,7 @@ public class StriderAI : MonoBehaviour
     }
 
     //enemy actions
-    void attack()
+    public void attack()
     {
         isIdle = false;
         isJabbing = true;
@@ -78,8 +94,8 @@ public class StriderAI : MonoBehaviour
         anim.SetBool("isIdle", false);
         anim.SetBool("isAttacking", true);
         anim.SetBool("isWalking", false);
-        StartCoroutine(waitForAttack());
         pursuing = true;
+        StartCoroutine(waitForAttack());
     }
 
     void beIdle()
@@ -106,5 +122,16 @@ public class StriderAI : MonoBehaviour
     {
         yield return new WaitForSeconds(attackTime);
         isJabbing = false;
+    }
+
+    public void exitShield()
+    {
+        attackingShield = false;
+        pursuing = false;
+        isJabbing = false;
+        isIdle = true;
+        anim.SetBool("isIdle", true);
+        anim.SetBool("isAttacking", false);
+        anim.SetBool("isRunning", false);
     }
 }

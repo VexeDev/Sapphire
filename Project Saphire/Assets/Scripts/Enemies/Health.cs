@@ -10,6 +10,9 @@ public class Health : MonoBehaviour
 
     public bool isStrider;
     public bool isBrute;
+    public bool isShield;
+    public bool isShieldGenerator;
+    public GameObject shieldGenerator;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +60,16 @@ public class Health : MonoBehaviour
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(striderDie());
             this.GetComponent<StriderAI>().enabled = false;
+        }
+
+        if(isShield == true)
+        {
+            Destroy(shieldGenerator);
+        }
+
+        if(isShieldGenerator == true)
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -22,6 +22,8 @@ public class NewAxe : MonoBehaviour
 
     public GameObject axePrefab;
 
+    public GameObject greyAxe;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,13 +51,20 @@ public class NewAxe : MonoBehaviour
 
         if (hasAxe == true)
         {
-            StopCoroutine(co);
+            greyAxe.SetActive(false);
+
+            if (co != null)
+            {
+                StopCoroutine(co);
+            }
+        } else
+        {
+            greyAxe.SetActive(true);
         }
     }
 
     void swingAxe()
     {
-        Debug.Log("swung the axe");
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -72,7 +81,6 @@ public class NewAxe : MonoBehaviour
 
     void throwAxe ()
     {
-        Debug.Log("threw the axe");
         GameObject axePosition = Instantiate(axePrefab, throwLocation.transform.position, throwLocation.transform.rotation);
         Rigidbody rb = axePosition.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
@@ -83,25 +91,20 @@ public class NewAxe : MonoBehaviour
 
     public void refillTheAxe ()
     {
-        Debug.Log("picked up the axe");
         hasAxe = true;
         canAttack = true;
     }
 
     IEnumerator thrownCooldown(float cooldown)
     {
-        Debug.Log("throw cooldown");
         yield return new WaitForSeconds(cooldown);
         hasAxe = true;
         canAttack = true;
-        Debug.Log("throw cooldown up");
     }
 
     IEnumerator swungCooldown (float cooldown)
     {
-        Debug.Log("swing cooldown");
         yield return new WaitForSeconds(cooldown);
         canAttack = true;
-        Debug.Log("swing cooldown up");
     }
 }

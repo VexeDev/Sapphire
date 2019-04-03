@@ -26,6 +26,8 @@ public class BruteAI : MonoBehaviour
 
     public float attackTime = 1.4f;
 
+    public bool attackingShield = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,11 @@ public class BruteAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(attackingShield == true)
+        {
+            attack();
+        }
+
         Vector3 direction = player.transform.position - this.transform.position;
         direction.y = 0;
 
@@ -46,10 +53,19 @@ public class BruteAI : MonoBehaviour
 
         float angle = Vector3.Angle(direction, head.forward);
 
+        if (isMurdering == true)
+        {
+            agent.SetDestination(bruteLocation);
+        }
+
         if (Vector3.Distance(player.position, this.transform.position) < viewDistance && (angle < viewAngle || pursuing == true))
         {
+            if (anim.GetBool("isAttacking") == true)
+            {
+                agent.SetDestination(bruteLocation);
+            }
 
-            if(direction.magnitude > attackDistance)
+            if (direction.magnitude > attackDistance && attackingShield == false)
             {
                 isIdle = false;
                 agent.SetDestination(target);
@@ -64,24 +80,10 @@ public class BruteAI : MonoBehaviour
                 {
 
                 }
-            } else if(direction.magnitude <= attackDistance)
+            } else if(direction.magnitude <= attackDistance && isMurdering == false)
             {
-                isIdle = false;
-                //attack
-                isMurdering = true;
                 attack();
-                pursuing = true;
             }
-        } else
-        {
-            //be idle
-            isIdle = true;
-            //idle anims
-            anim.SetBool("isIdle", true);
-            anim.SetBool("slash1", false);
-            anim.SetBool("slash2", false);
-            anim.SetBool("isWalking", false);
-            pursuing = false;
         }
         
         if(isMurdering == true)
@@ -95,15 +97,29 @@ public class BruteAI : MonoBehaviour
         }
     }
 
-    void attack()
+    public void attack()
     {
+        isIdle = false;
+        isMurdering = true;
         anim.SetBool("isIdle", false);
         anim.SetBool("slash1", true);
         anim.SetBool("slash2", false);
         anim.SetBool("isWalking", false);
-        isMurdering = true;
+        pursuing = true;
         StartCoroutine(waitForAttack());
         //attack anim
+    }
+
+    public void exitShield ()
+    {
+        attackingShield = false;
+        pursuing = false;
+        isMurdering = false;
+        isIdle = true;
+        anim.SetBool("isIdle", true);
+        anim.SetBool("slash1", false);
+        anim.SetBool("slash2", false);
+        anim.SetBool("isWalking", false);
     }
 
     private IEnumerator waitForAttack()

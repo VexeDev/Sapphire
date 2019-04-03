@@ -10,6 +10,8 @@ public class Hazard : MonoBehaviour
 
     public GameObject eventSystem;
 
+    public GameObject sparkEffect;
+
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player" && cooldownActive == false)
@@ -18,8 +20,24 @@ public class Hazard : MonoBehaviour
             eventSystem.GetComponent<newPlayerHealth>().Damage(damage);
             StartCoroutine(startCooldown());
         }
-    }
 
+        if(other.tag == "Shield" && cooldownActive == false)
+        {
+            cooldownActive = true;
+            other.GetComponent<Health>().Damage(damage);
+            StartCoroutine(startCooldown());
+            //sparkEffect.SetActive(true);
+        }
+    }
+    /*
+    private void OnTriggerExit(Collider other)
+    {
+         if(other.tag == "Shield")
+        {
+            sparkEffect.SetActive(false);
+        }
+    }
+    */
     private IEnumerator startCooldown ()
     {
         yield return new WaitForSeconds(damageCooldown);
