@@ -1,12 +1,12 @@
 OSXUniversal
 PlayerPath?
-D:/Extra/Unity Builds/Sapphire New/Alpha/00.1.4a/Mac.app
+D:/Extra/Unity Builds/Sapphire New/Alpha/00.1.6a/Mac.app
 SceneListBegin?
 Assets/Scenes/Menu.unity
-Assets/Scenes/Levels/Level 1.unity
+Assets/Scenes/Levels/Game/Level 1.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
-be671b9deaa36c40e8a4683acca4c4dc Assembly-CSharp.dll:.MainMenu
+6919fe6bc4fceb466d7e67926632e164 Assembly-CSharp.dll:.MainMenu
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -176,8 +176,8 @@ f8bd7a92bf9f22d289759689ae7b1fd4 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 6945243326f5999a54d0e95f68f8943a Assembly-CSharp.dll:.ShieldGenerator
 05ca05449fb25265bca57a3287ad6d81 Assembly-CSharp.dll:.GrenadeToss
-83e0d79285b9fba7bb83db877c32a098 Assembly-CSharp.dll:.Pause
-78c89bfb0db1f3c6baf9301a4f3d20bf Assembly-CSharp.dll:.Health
+cfa11fc5094486e849398f9b37608293 Assembly-CSharp.dll:.Pause
+9d011d3e16dd8a78ab50bf4ba41e87c9 Assembly-CSharp.dll:.Health
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -233,7 +233,7 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 aeefe284b467450dd47430923a13f393 Assembly-CSharp.dll:.AutoGun
 d7a66fbf9202fb605dad1be9da762a2b Assembly-CSharp.dll:.BruteAI
 a02f439c77ed2745259f10c91b60b531 Assembly-CSharp.dll:.Hazard
-3ec9644cccba9e1f389a04fcfe33149e Assembly-CSharp.dll:.Options
+b585dc47721ca9047932890df3bd0499 Assembly-CSharp.dll:.Options
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter

@@ -9,6 +9,7 @@ public class Options : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider mainVolSlider;
     public string parameterName;
+    public Text mainVolText;
 
     private void Awake()
     {
@@ -18,10 +19,20 @@ public class Options : MonoBehaviour
         mainVolSlider.onValueChanged.AddListener((float _) => SetVolume(_)); //UI classes use unity events, requiring delegates (delegate(float _) { SetVolume(_); }) or lambda expressions ((float _) => SetVolume(_))
     }
 
+    private void Start()
+    {
+        mainVolSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Volume");
+    }
+
     void SetVolume(float _value)
     {
-        audioMixer.SetFloat(parameterName, ConvertToDecibel(_value / mainVolSlider.maxValue)); //Dividing by max allows arbitrary positive slider maxValue
+        audioMixer.SetFloat(parameterName, _value); //Dividing by max allows arbitrary positive slider maxValue
         PlayerPrefs.SetFloat(parameterName, _value);
+        float mainValue = mainVolSlider.value;
+        float newIsh = mainValue + 80;
+        double newerValue = newIsh * 1.25;
+        int newValue = Mathf.RoundToInt((float)newerValue);
+        mainVolText.text = newValue.ToString() + "%";
     }
 
     public float ConvertToDecibel(float _value)

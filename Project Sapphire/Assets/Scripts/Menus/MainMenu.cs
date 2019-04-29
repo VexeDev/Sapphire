@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+    public Slider mainVolSlider;
+
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        mainVolSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Volume");
     }
 
     public GameObject mainPanel;

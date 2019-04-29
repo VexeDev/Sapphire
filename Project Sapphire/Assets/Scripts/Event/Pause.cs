@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Pause : MonoBehaviour
 {
@@ -14,10 +15,13 @@ public class Pause : MonoBehaviour
 
     public bool isPaused;
 
+    public AudioMixer mainAudio;
+
     private void Start()
     {
         isPaused = false;
         closePause();
+        mainAudio.SetFloat("Volume", PlayerPrefs.GetFloat("Volume"));
     }
 
     // Update is called once per frame
