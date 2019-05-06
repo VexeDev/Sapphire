@@ -70,8 +70,20 @@
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
@@ -82,17 +94,32 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -322,9 +349,6 @@
     <Reference Include="PKFx-Editor">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/Editor/PKFx-Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -336,9 +360,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/GitHub/Sapphire/Sapphire/Project Sapphire/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
