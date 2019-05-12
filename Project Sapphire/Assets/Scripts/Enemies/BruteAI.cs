@@ -28,6 +28,8 @@ public class BruteAI : MonoBehaviour
 
     public bool attackingShield = false;
 
+    GameObject playerObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,8 @@ public class BruteAI : MonoBehaviour
         anim.SetBool("isIdle", true);
         agent = this.GetComponent<NavMeshAgent>();
         agent.stoppingDistance = attackDistance;
+        playerObject = GameObject.FindGameObjectWithTag("Player");
+        player = playerObject.transform;
     }
 
     // Update is called once per frame

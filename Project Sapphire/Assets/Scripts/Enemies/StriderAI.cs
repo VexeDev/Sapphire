@@ -21,12 +21,16 @@ public class StriderAI : MonoBehaviour
 
     public bool attackingShield = false;
 
+    GameObject playerObject;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("isIdle", true);
         agent.stoppingDistance = attackDistance;
+        playerObject = GameObject.FindGameObjectWithTag("Player");
+        player = playerObject.transform;
     }
 
     // Update is called once per frame

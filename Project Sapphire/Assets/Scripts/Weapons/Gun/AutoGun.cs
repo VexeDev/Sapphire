@@ -32,6 +32,9 @@ public class AutoGun : MonoBehaviour
     Animator camAnim;
 
     public Text currentAmmoText;
+    public Text currentAmmoWorldText;
+
+    public AudioSource gunshot;
 
     //initialization
     void Start()
@@ -45,6 +48,7 @@ public class AutoGun : MonoBehaviour
     void Update()
     {
         currentAmmoText.text = currentAmmo.ToString();
+        currentAmmoWorldText.text = currentAmmo.ToString();
 
         if(isReloading == true)
         {
@@ -111,6 +115,7 @@ public class AutoGun : MonoBehaviour
     {
 
         currentAmmo--;
+        gunshot.Play();
 
         RaycastHit hit;
         muzzleFlash.Play();
@@ -180,11 +185,14 @@ public class AutoGun : MonoBehaviour
     {
         isAiming = false;
         isReloading = true;
+
+        anim.SetBool("reloading", true);
         
         yield return new WaitForSeconds(reloadTime);
         currentAmmo = maxAmmo;
 
         isReloading = false;
+        anim.SetBool("reloading", false);
     }
 
     IEnumerator unZoomTimer ()

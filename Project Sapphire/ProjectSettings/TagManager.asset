@@ -10,6 +10,7 @@ TagManager:
   - Room 1
   - Shield
   - ShieldGenerator
+  - DialogueCanvas
   layers:
   - Default
   - TransparentFX

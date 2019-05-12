@@ -33,6 +33,7 @@ public class Options : MonoBehaviour
         double newerValue = newIsh * 1.25;
         int newValue = Mathf.RoundToInt((float)newerValue);
         mainVolText.text = newValue.ToString() + "%";
+        PlayerPrefs.Save();
     }
 
     public float ConvertToDecibel(float _value)

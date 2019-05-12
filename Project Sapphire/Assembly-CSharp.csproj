@@ -71,6 +71,7 @@
     <Compile Include="Assets\Imports\DiscoveryPack_Demo\_Sources\Scripts\RootyTootyPointNShooty.cs" />
     <Compile Include="Assets\Imports\DiscoveryPack_Demo\_Sources\Scripts\TimedSuicide.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueCollisionTrigger.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueEngine.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\BruteAI.cs" />

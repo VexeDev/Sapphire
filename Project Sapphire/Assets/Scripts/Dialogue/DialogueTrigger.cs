@@ -10,11 +10,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Submit") && hasTriggered == false)
-        {
-            hasTriggered = true;
-            TriggerDialogue();
-        } else if (Input.GetButtonDown("Submit") && hasTriggered == true)
+        if (Input.GetButtonDown("Submit") && hasTriggered == true)
         {
             dialogueEngine.GetComponent<DialogueEngine>().DisplayNextSentence();
         }
@@ -23,5 +19,14 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue ()
     {
         FindObjectOfType<DialogueEngine>().StartDialogue(dialogue);
+    }
+
+    public void triggerDialogue ()
+    {
+        if (hasTriggered == false)
+        {
+            hasTriggered = true;
+            TriggerDialogue();
+        }
     }
 }
