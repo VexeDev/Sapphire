@@ -65,7 +65,7 @@ public class BruteAI : MonoBehaviour
 
         if (Vector3.Distance(player.position, this.transform.position) < viewDistance && (angle < viewAngle || pursuing == true))
         {
-            if (anim.GetBool("isAttacking") == true)
+            if (anim.GetBool("slash1") == true)
             {
                 agent.SetDestination(bruteLocation);
             }
