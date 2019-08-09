@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{A996027E-5F1D-06AE-D5D4-73E11648550C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Torch/Render.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Weapons/Gun/AutoGun.cs">
     <Files>
       <File FileName="Assets/Scripts/Enemies/BruteAI.cs" Line="27" Column="36" />
       <File FileName="Assets/Scripts/Weapons/Gun/AutoGun.cs" Line="99" Column="20" />
@@ -8,7 +8,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a3f16c43-e6a6-4d24-bbd6-406827f027a2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="241d0e66-69dc-4523-b15c-69c52f9c06cb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
