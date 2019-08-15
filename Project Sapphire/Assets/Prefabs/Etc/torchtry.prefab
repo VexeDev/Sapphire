@@ -87,8 +87,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2932030449055724214}
-  - component: {fileID: 8156245326659109432}
-  - component: {fileID: 6011432695094524028}
+  - component: {fileID: 9061614931342948996}
   m_Layer: 0
   m_Name: torchtry
   m_TagString: Untagged
@@ -111,7 +110,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8156245326659109432
+--- !u!114 &9061614931342948996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,22 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469ad8816c3984d5096fa9b8f04c1fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderMake: {fileID: 0}
-  litStart: 0
-  torchBody: {fileID: 7911169669161747889}
---- !u!65 &6011432695094524028
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7911169669984300460}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3000, y: 3000, z: 3000}
-  m_Center: {x: 0, y: 0, z: 0}
+  playerObject: {fileID: 7369494957399236983, guid: 7bc60f1de19e6054ba0b7acca22a7fd7,
+    type: 3}
 --- !u!1 &7911169670528583568
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +163,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7911169670528583568}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 0.8584906, g: 0.4660919, b: 0.020247417, a: 1}
@@ -216,7 +201,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295

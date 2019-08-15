@@ -4,59 +4,27 @@ using UnityEngine;
 
 public class Render : MonoBehaviour
 {
-
-    public Renderer renderMake;
-    public bool litStart;
-    public GameObject torchBody;
-
-    /*
-   // Start is called before the first frame update
-   void Start()
-   {
-       if(litStart == true)
-       {
-           torchBody.SetActive(true);
-       } else
-       {
-           torchBody.SetActive(false);
-       }
-   }
-
-   private void OnTriggerEnter(Collider other)
-   {
-       if (other.tag == "Player")
-       {
-           torchBody.SetActive(true);
-       }
-   }
-
-   private void OnTriggerExit(Collider other)
-   {
-       if (other.tag == "Player")
-       {
-           torchBody.SetActive(false);
-       }
-   }*/
+    Light thisLight;
+    Transform player;
+    public GameObject playerObject;
 
     private void Start()
     {
-        if(litStart == true)
-        {
-            torchBody.SetActive(true);
-        } else
-        {
-            torchBody.SetActive(false);
-        }
+        thisLight = GetComponentInChildren<Light>();
+        player = playerObject.transform;
     }
 
-    private void Update()
+    void Update()
     {
-        if(renderMake.isVisible)
+        float distance = Vector3.Distance(player.position, transform.position);
+        if(distance <= 75f)
         {
-            torchBody.SetActive(true);
+            thisLight.enabled = true;
+            //Debug.Log("enabled");
         } else
         {
-            torchBody.SetActive(false);
+            thisLight.enabled = false;
+            //Debug.Log("disabled");
         }
     }
 }
