@@ -129,79 +129,79 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Polygonal Particles\Assets\Shaders\GradientBackgroundShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -387,22 +387,22 @@
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.8f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="PKFx-Runtime">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/PKFx-Runtime.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/PKFx-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PKFx-Helper">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/PKFx-Helper.dll</HintPath>
     </Reference>
     <Reference Include="PKFxManager">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/PKFxManager.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Assets/Imports/PopcornFX/Scripts/PKFxManager.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/maddox/Documents/GitHub/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/maddox/Documents/Unity Projects/GitHub/Sapphire/Project Sapphire/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.8f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
