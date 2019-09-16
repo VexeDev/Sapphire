@@ -23,14 +23,13 @@ Material:
   m_Name: MuzzleFlash
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHABLEND_ON _COLORADDSUBDIFF_ON _EMISSION _RECEIVE_SHADOWS_OFF
-  m_LightmapFlags: 2
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
-  - ALWAYS
   - SHADOWCASTER
   m_SavedProperties:
     serializedVersion: 3

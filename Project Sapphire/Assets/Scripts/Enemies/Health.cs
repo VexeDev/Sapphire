@@ -18,6 +18,8 @@ public class Health : MonoBehaviour
     public GameObject fist1;
     public GameObject fist2;
 
+    public bool shouldResetDestination = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,17 +44,19 @@ public class Health : MonoBehaviour
     {
         if(isBrute == true)
         {
+            bruteWeapon.GetComponent<Hazard>().enabled = false;
             anim.SetBool("isWalking", false);
             anim.SetBool("slash1", false);
             anim.SetBool("isIdle", false);
             anim.SetBool("isRunning", false);
             anim.SetBool("slash2", false);
-            this.GetComponent<BruteAI>().agent.SetDestination(this.transform.position);
+            if(shouldResetDestination == true) {
+              this.GetComponent<BruteAI>().agent.SetDestination(this.transform.position);
+            }
             anim.SetBool("isDead", true);
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(bruteDie());
             this.GetComponent<BruteAI>().enabled = false;
-            bruteWeapon.GetComponent<Hazard>().enabled = false;
         }
 
         if(isStrider == true)
@@ -60,7 +64,9 @@ public class Health : MonoBehaviour
             anim.SetBool("isIdle", false);
             anim.SetBool("isRunning", false);
             anim.SetBool("isAttacking", false);
-            this.GetComponent<StriderAI>().agent.SetDestination(this.transform.position);
+            if(shouldResetDestination == true) {
+              this.GetComponent<StriderAI>().agent.SetDestination(this.transform.position);
+            }
             anim.SetBool("isDead", true);
             this.GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(striderDie());

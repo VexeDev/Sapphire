@@ -19,7 +19,7 @@ public class Hazard : MonoBehaviour
     {
         if(other.tag == "Player" && cooldownActive == false)
         {
-            Debug.Log("i should damage the player");
+            //Debug.Log("i should damage the player");
             cooldownActive = true;
             eventSystem.GetComponent<newPlayerHealth>().Damage(damage);
             StartCoroutine(startCooldown());

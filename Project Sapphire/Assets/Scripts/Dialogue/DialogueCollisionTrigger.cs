@@ -8,16 +8,16 @@ public class DialogueCollisionTrigger : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("i am alive");
+        //Debug.Log("i am alive");
         dialogueCanvas = GameObject.FindGameObjectWithTag("DialogueCanvas");
     }
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("trigger entered");
+        //Debug.Log("trigger entered");
         if (other.tag == "Player")
         {
-            Debug.Log("player collided with me");
+            //Debug.Log("player collided with me");
             dialogueCanvas.GetComponent<DialogueTrigger>().triggerDialogue();
             this.enabled = false;
         }

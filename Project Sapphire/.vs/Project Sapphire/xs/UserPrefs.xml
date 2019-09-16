@@ -1,13 +1,25 @@
 ﻿<Properties StartupConfiguration="{A996027E-5F1D-06AE-D5D4-73E11648550C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Torch/Render.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Enemies/BruteAI.cs" Line="27" Column="36" />
-      <File FileName="Assets/Scripts/Weapons/Gun/AutoGun.cs" />
-      <File FileName="Assets/Scripts/Torch/Render.cs" Line="25" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Project Sapphire" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Dialogue" expanded="True" />
+                <Node name="Event" expanded="True">
+                  <Node name="LevelEnd.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="607a8d73-e630-4681-a219-c5320dbb727d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

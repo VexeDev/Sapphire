@@ -41,17 +41,24 @@ public class newPlayerHealth : MonoBehaviour
     void Die()
     {
         //disable movement, play an animation, game over screen or smth, and give the player the opportunity to retry the level
+        //animation:
 
         //disable movement
         player.GetComponent<CharacterController>().enabled = false;
         //disable player ui
         playerUI.SetActive(false);
-        //enable restart info
-        SceneManager.LoadScene(0);
+        //start coroutine that will wait for death animation to finish before loading menu
+        StartCoroutine(deathLoader());
     }
 
     public void Heal (int health)
     {
         currentHealth = currentHealth + health;
+    }
+
+    IEnumerator deathLoader()
+    {
+      yield return new WaitForSeconds(5f);
+      SceneManager.LoadScene(0);
     }
 }

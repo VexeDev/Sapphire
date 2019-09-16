@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a56e6eeddf20f7a40967e97dba3d12b7, type: 2}
+  - {fileID: 2100000, guid: 5c89c809778faf84fa8368be9dd7c761, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   bruteWeapon: {fileID: 0}
   fist1: {fileID: 0}
   fist2: {fileID: 0}
+  shouldResetDestination: 1
 --- !u!1 &5609927312449290480
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shield: {fileID: 2958344043492991519}
   detonateTime: 3
-  range: 2
+  range: 0.5
 --- !u!54 &5609927312449290479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -269,6 +270,7 @@ MonoBehaviour:
   bruteWeapon: {fileID: 0}
   fist1: {fileID: 0}
   fist2: {fileID: 0}
+  shouldResetDestination: 1
 --- !u!65 &3996356646939829948
 BoxCollider:
   m_ObjectHideFlags: 0

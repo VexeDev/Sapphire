@@ -21,7 +21,7 @@ public class DialogueEngine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void StartDialogue (Dialogue dialogue)

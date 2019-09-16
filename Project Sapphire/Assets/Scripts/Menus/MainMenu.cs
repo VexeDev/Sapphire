@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public int sceneLoadNumber;
 
     public Slider mainVolSlider;
 
@@ -26,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneLoadNumber);
     }
 
     public void openOptions()

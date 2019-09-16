@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5298375255307683509}
   - component: {fileID: 5298375255308486299}
   - component: {fileID: 5298375255309452507}
+  - component: {fileID: 4889018268098607555}
   m_Layer: 0
   m_Name: Dungeon.Wall.Doorway
   m_TagString: Untagged
@@ -78,6 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4889018268098607555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5298375255307459221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.999996, y: 3.9621665, z: 0.9999988}
+  m_Center: {x: -2.499999, y: 1.981083, z: 0}
 --- !u!1 &5298375255307459283
 GameObject:
   m_ObjectHideFlags: 0
