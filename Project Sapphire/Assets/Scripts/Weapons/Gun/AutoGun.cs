@@ -27,9 +27,7 @@ public class AutoGun : MonoBehaviour
     private float nextTimeToFire = 0f;
 
     Animator anim;
-    Animator camAnim;
 
-    public Text currentAmmoText;
     public Text currentAmmoWorldText;
 
     public AudioSource gunshot;
@@ -45,12 +43,11 @@ public class AutoGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentAmmoText.text = currentAmmo.ToString();
         currentAmmoWorldText.text = currentAmmo.ToString();
 
         if(isReloading == true)
         {
-            currentAmmoText.text = 0.ToString();
+            currentAmmoWorldText.text = 0.ToString();
         }
 
         if (isReloading == true)
