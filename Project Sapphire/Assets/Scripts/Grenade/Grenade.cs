@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Grenade : MonoBehaviour
 {
+    public AudioSource audioSource;
 
     public float delay;
 
@@ -25,6 +27,7 @@ public class Grenade : MonoBehaviour
     void Start()
     {
         countdown = delay;
+        //audioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,14 +36,16 @@ public class Grenade : MonoBehaviour
         countdown -= Time.deltaTime;
         if (countdown <= 0f && hasExploded == false)
         {
-            Explode();
             hasExploded = true;
+            audioSource.Play();
+            StartCoroutine(wait2(0.4f));
         }
 
         if (health <= 0f)
         {
-            Explode();
             hasExploded = true;
+            audioSource.Play();
+            StartCoroutine(wait2(0.4f));
         }
     }
 
@@ -84,6 +89,20 @@ public class Grenade : MonoBehaviour
                 }
             }
         }
+        StartCoroutine(wait(4));
+        //Destroy(gameObject);
+    }
+
+    public IEnumerator wait(float waitTime)
+    {
+        this.GetComponent<MeshRenderer>().enabled = false;
+        yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
+    }
+
+    public IEnumerator wait2(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Explode();
     }
 }

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+using UnityEngine.Audio;
+
 
 public class AutoGun : MonoBehaviour
 {
@@ -23,11 +26,6 @@ public class AutoGun : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
-    public GameObject normalCam;
-    public GameObject ADSCam;
-    bool isAiming = false;
-    bool hasAimed = false;
-
     Animator anim;
     Animator camAnim;
 
@@ -35,13 +33,13 @@ public class AutoGun : MonoBehaviour
     public Text currentAmmoWorldText;
 
     public AudioSource gunshot;
+    [SerializeField] private AudioClip[] gunshotSounds;
 
     //initialization
     void Start()
     {
         currentAmmo = maxAmmo;
         anim = this.GetComponent<Animator>();
-        camAnim = ADSCam.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -74,26 +72,6 @@ public class AutoGun : MonoBehaviour
         {
             Reload();
         }
-
-        if(Input.GetButtonDown ("Fire2"))
-        {
-            isAiming = true;
-        }
-
-        if(Input.GetButtonUp ("Fire2"))
-        {
-            isAiming = false;
-        }
-
-        if (isAiming == true)
-        {
-            Aim();
-        }
-
-        if(isAiming == false)
-        {
-            StopAim();
-        }
     }
 
     void OnEnable()
@@ -105,7 +83,6 @@ public class AutoGun : MonoBehaviour
     {
         if (currentAmmo < maxAmmo)
         {
-            forceAimQuit();
             StartCoroutine(reload());
             return;
         }
@@ -115,7 +92,7 @@ public class AutoGun : MonoBehaviour
     {
 
         currentAmmo--;
-        gunshot.Play();
+        playShotAudio();
 
         RaycastHit hit;
         muzzleFlash.Play();
@@ -136,43 +113,13 @@ public class AutoGun : MonoBehaviour
         }
     }
 
-    void Aim()
+    void playShotAudio ()
     {
-        if(hasAimed == false)
-        {
-            hasAimed = true;
-            //turn off normal cam
-            normalCam.GetComponent<Camera>().enabled = false;
-            //turn on new cam
-            ADSCam.GetComponent<Camera>().enabled = true;
-            //play gun zoom anim
-            anim.SetBool("isAiming", true);
-            //play cam zoom anim
-            camAnim.SetBool("isAiming", true);
-        }
-    }
-
-    void StopAim()
-    {
-        if(hasAimed == true)
-        {
-            hasAimed = false;
-            //play cam unzoom
-            anim.SetBool("isAiming", false);
-            //play gun unzoom
-            camAnim.SetBool("isAiming", false);
-            //should wait a few secs before doing this
-            StartCoroutine(unZoomTimer());
-        }
-    }
-
-    void forceAimQuit ()
-    {
-        isAiming = false;
-        anim.SetBool("isAiming", false);
-        hasAimed = false;
-        ADSCam.GetComponent<Camera>().enabled = false;
-        normalCam.GetComponent<Camera>().enabled = true;
+        int n = Random.Range(1, gunshotSounds.Length);
+        gunshot.clip = gunshotSounds[n];
+        gunshot.PlayOneShot(gunshot.clip);
+        gunshotSounds[n] = gunshotSounds[0];
+        gunshotSounds[0] = gunshot.clip;
     }
 
     IEnumerator lightTimer ()
@@ -183,7 +130,6 @@ public class AutoGun : MonoBehaviour
 
     IEnumerator reload ()
     {
-        isAiming = false;
         isReloading = true;
 
         anim.SetBool("reloading", true);
@@ -195,12 +141,5 @@ public class AutoGun : MonoBehaviour
         anim.SetBool("reloading", false);
     }
 
-    IEnumerator unZoomTimer ()
-    {
-        yield return new WaitForSeconds(.15f);
-        //turn off new cam
-        ADSCam.GetComponent<Camera>().enabled = false;
-        //turn on old cam
-        normalCam.GetComponent<Camera>().enabled = true;
-    }
+    
 }

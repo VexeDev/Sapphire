@@ -1,5 +1,8 @@
 ﻿<Properties StartupConfiguration="{A996027E-5F1D-06AE-D5D4-73E11648550C}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Weapons/Gun/AutoGun.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Weapons/Gun/AutoGun.cs" Line="126" Column="29" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -7,8 +10,21 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Dialogue" expanded="True" />
-                <Node name="Event" expanded="True">
-                  <Node name="LevelEnd.cs" selected="True" />
+                <Node name="Enemies" expanded="True" />
+                <Node name="Event" expanded="True" />
+                <Node name="Grenade" expanded="True" />
+                <Node name="Shield" expanded="True" />
+                <Node name="Weapons" expanded="True">
+                  <Node name="Gun" expanded="True">
+                    <Node name="AutoGun.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Standard Assets" expanded="True">
+                <Node name="Characters" expanded="True">
+                  <Node name="FirstPersonCharacter" expanded="True">
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
@@ -19,7 +35,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="607a8d73-e630-4681-a219-c5320dbb727d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bbea01e9-1adf-4df4-88a6-b23ef5bfeabb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

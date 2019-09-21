@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ShieldGenerator : MonoBehaviour
 {
@@ -10,10 +11,15 @@ public class ShieldGenerator : MonoBehaviour
 
     public float range = 2f;
 
+    bool shieldMakeHasPlayed;
+
     private void Start()
     {
         anim = shield.GetComponent<Animator>();
+        //audioSource = this.gameObject.GetComponent<AudioSource>();
     }
+
+    public AudioClip shieldMake;
 
     private void Update()
     {
@@ -29,6 +35,14 @@ public class ShieldGenerator : MonoBehaviour
             }
             else
             {
+                if (!GetComponent<AudioSource>().isPlaying && shieldMakeHasPlayed == false)
+                {
+                    GetComponent<AudioSource>().clip = shieldMake;
+                    GetComponent<AudioSource>().Play();
+                    shieldMakeHasPlayed = true;
+                }
+                
+                //Debug.Log("the sounds hould have been played");
                 anim.SetBool("expand", true);
                 gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 shield.GetComponent<BoxCollider>().enabled = true;

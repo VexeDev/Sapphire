@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Health : MonoBehaviour
 {
@@ -13,12 +14,16 @@ public class Health : MonoBehaviour
     public bool isShield;
     public bool isShieldGenerator;
     public GameObject shieldGenerator;
+    public GameObject shield;
 
     public GameObject bruteWeapon;
     public GameObject fist1;
     public GameObject fist2;
 
     public bool shouldResetDestination = true;
+
+    public AudioClip shieldBreakClip;
+    bool hasPlayed;
 
     // Start is called before the first frame update
     void Start()
@@ -75,14 +80,20 @@ public class Health : MonoBehaviour
             fist2.GetComponent<Hazard>().enabled = false;
         }
 
-        if(isShield == true)
+        if (isShield == true && hasPlayed == false)
         {
-            Destroy(shieldGenerator);
+            hasPlayed = true;
+            shieldGenerator.GetComponent<AudioSource>().clip = shieldBreakClip;
+            shield.GetComponent<AudioSource>().Play();
+            StartCoroutine(shieldBreakTime());
         }
 
-        if(isShieldGenerator == true)
+        if(isShieldGenerator == true && hasPlayed == false)
         {
-            Destroy(gameObject);
+            hasPlayed = true;
+            shieldGenerator.GetComponent<AudioSource>().clip = shieldBreakClip;
+            shield.GetComponent<AudioSource>().Play();
+            StartCoroutine(shieldBreakTime());
         }
     }
 
@@ -96,5 +107,19 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         Destroy(gameObject);
+    }
+
+    IEnumerator shieldBreakTime ()
+    {
+        //disable mesh renderer
+        shieldGenerator.GetComponent<MeshRenderer>().enabled = false;
+        shield.GetComponent<MeshRenderer>().enabled = false;
+        shield.GetComponent<BoxCollider>().enabled = false;
+        shieldGenerator.GetComponent<BoxCollider>().enabled = false;
+        //instantiate shatter effect
+        /*insert here*/
+        //wait for sound to play before destroying
+        yield return new WaitForSeconds(.7f);
+        Destroy(shieldGenerator);
     }
 }
