@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5060503923915748086}
   - component: {fileID: 5060503923914617014}
   - component: {fileID: 6422388924900166575}
+  - component: {fileID: 8849939202850932132}
   m_Layer: 0
   m_Name: WallPillar
   m_TagString: Untagged
@@ -91,3 +92,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3359846, y: 4.01097, z: 1.3359853}
   m_Center: {x: 0, y: 2.0054846, z: 0.0000004172325}
+--- !u!208 &8849939202850932132
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060503923912355572}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.66800004, y: 2.005, z: 0.66800004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.005, z: 0}
+  m_TimeToStationary: 0.5

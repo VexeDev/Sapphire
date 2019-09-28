@@ -5208,6 +5208,7 @@ GameObject:
   - component: {fileID: 2965115749926137838}
   - component: {fileID: 2965115749927103918}
   - component: {fileID: 8443083013005167241}
+  - component: {fileID: 5532811673604918291}
   m_Layer: 0
   m_Name: Dungeon.Wall (1)
   m_TagString: Untagged
@@ -5287,6 +5288,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.0000005, y: 4, z: 0.9999988}
   m_Center: {x: -2.5000021, y: 1.9999999, z: 0}
+--- !u!208 &5532811673604918291
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965115749929104364}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 2, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -2.5, y: 2, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3434151350659921932
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,6 +5316,7 @@ GameObject:
   - component: {fileID: 3434151350662915074}
   - component: {fileID: 3434151350661916226}
   - component: {fileID: 7940932001941280196}
+  - component: {fileID: 4103646095581930174}
   m_Layer: 0
   m_Name: Dungeon.Wall.Doorway
   m_TagString: Untagged
@@ -5378,6 +5396,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.999997, y: 3.9621665, z: 0.99999905}
   m_Center: {x: -2.4999995, y: 1.981083, z: 0}
+--- !u!208 &4103646095581930174
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3434151350659921932}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 1.9810001, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -2.5, y: 1.9810001, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5155304754728907354
 GameObject:
   m_ObjectHideFlags: 0
@@ -5481,6 +5515,7 @@ GameObject:
   - component: {fileID: 5166181478990927500}
   - component: {fileID: 5166181478989927628}
   - component: {fileID: 6178251676769264221}
+  - component: {fileID: 117924386563235132}
   m_Layer: 0
   m_Name: Dungeon.Wall
   m_TagString: Untagged
@@ -5560,6 +5595,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.0000005, y: 4, z: 0.9999988}
   m_Center: {x: -2.5000021, y: 1.9999999, z: 0}
+--- !u!208 &117924386563235132
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166181478987926158}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 2, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -2.5, y: 2, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5677098184173480612
 GameObject:
   m_ObjectHideFlags: 0

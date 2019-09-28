@@ -359,14 +359,14 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: a1311214c3ed447b78bf23588c6d156b, type: 3}
-  - {fileID: 8300000, guid: 5ceb0ad371e844d4f8e8300a8ae7f239, type: 3}
-  - {fileID: 8300000, guid: 06d244137f2724f4ca96fa340080f0fa, type: 3}
-  - {fileID: 8300000, guid: aec89e7ce1ac24ec4b0d0bc7d5975ad8, type: 3}
-  - {fileID: 8300000, guid: ceb8145c3a32d4da59e00c0c1922894b, type: 3}
-  - {fileID: 8300000, guid: cf43f82102ee14fcb955915a20127d34, type: 3}
-  - {fileID: 8300000, guid: 5f221e2d17e784b4f85668df6a06d694, type: 3}
-  - {fileID: 8300000, guid: 13b2f34d1f40445fcac84efbdd18e4f2, type: 3}
+  - {fileID: 8300000, guid: 460760470b5ba45e18449038984ce36c, type: 3}
+  - {fileID: 8300000, guid: 5439b9d9daa4542fd8a06e1df88c84fd, type: 3}
+  - {fileID: 8300000, guid: f1a6f83552a994c71bdb5424cd503b74, type: 3}
+  - {fileID: 8300000, guid: ec84da54eb42c4dba8f4a66a3c452e04, type: 3}
+  - {fileID: 8300000, guid: b1fedde3141744a7c8ad8ee16cf75061, type: 3}
+  - {fileID: 8300000, guid: 38202f247894641e18302664ea0bd1e6, type: 3}
+  - {fileID: 8300000, guid: 8e8a8ef4fb04e441096a96bce3b5ccb9, type: 3}
+  - {fileID: 8300000, guid: 520c9032c6717468bb2ff50f194cb33a, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!54 &2387642702210526983
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a3f8edba10aef4a85e72fb78fe74c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
   range: 100
   fireRate: 8
   bloodImpactEffect: {fileID: 1850033487435682, guid: 2c4b2397ab17cce4bae0e99c1004869d,
@@ -1451,31 +1451,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -104
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.45
-      objectReference: {fileID: 0}
     - target: {fileID: 27919603377651341, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
         type: 3}
       propertyPath: dialogue
@@ -1511,6 +1486,31 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2750768696655461560}
+    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -104
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449076447927124405, guid: ac8e4456b6cafee4d849fba3dbc87e1f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8e4456b6cafee4d849fba3dbc87e1f, type: 3}
 --- !u!1 &2750768697550226716 stripped

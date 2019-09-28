@@ -80,15 +80,33 @@ public class BruteAI : MonoBehaviour
                 anim.SetBool("slash2", false);
                 anim.SetBool("isWalking", true);
                 pursuing = true;
-                //face player if it is within a distance that is obviously down a hallway
-                if (direction.magnitude < 10)
+                /*if (direction.magnitude < 10)
                 {
 
-                }
+                }*/
             } else if(direction.magnitude <= attackDistance && isMurdering == false)
             {
                 attack();
             }
+            else
+            {
+                isIdle = true;
+                agent.SetDestination(bruteLocation);
+                anim.SetBool("isIdle", true);
+                anim.SetBool("slash1", false);
+                anim.SetBool("slash2", false);
+                anim.SetBool("isWalking", false);
+                pursuing = false;
+            }
+        } else
+        {
+            isIdle = true;
+            agent.SetDestination(bruteLocation);
+            anim.SetBool("isIdle", true);
+            anim.SetBool("slash1", false);
+            anim.SetBool("slash2", false);
+            anim.SetBool("isWalking", false);
+            pursuing = false;
         }
         
         if(isMurdering == true)

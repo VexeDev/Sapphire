@@ -5153,7 +5153,7 @@ ParticleSystem:
 --- !u!199 &891654323784692760
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5315,7 +5315,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -5342,7 +5342,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 891654323889580558}
   attackDistance: 1.9
-  viewDistance: 20
+  viewDistance: 15
   head: {fileID: 891654324787534982}
   viewAngle: 360
   attackTime: 1.2
@@ -5381,9 +5381,12 @@ MonoBehaviour:
   isShield: 0
   isShieldGenerator: 0
   shieldGenerator: {fileID: 0}
+  shield: {fileID: 0}
   bruteWeapon: {fileID: 891654325054095403}
   fist1: {fileID: 0}
   fist2: {fileID: 0}
+  shouldResetDestination: 1
+  shieldBreakClip: {fileID: 0}
 --- !u!65 &891654323889580594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11406,7 +11409,7 @@ ParticleSystem:
 --- !u!199 &891654324872489224
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

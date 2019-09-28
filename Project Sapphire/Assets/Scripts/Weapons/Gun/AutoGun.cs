@@ -101,11 +101,11 @@ public class AutoGun : MonoBehaviour
             {
                 target.Damage(damage);
                 GameObject impactBGO = Instantiate(bloodImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactBGO, 2f);
+                Destroy(impactBGO, .1f);
             } else
             {
                 GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactGO, 2f);
+                Destroy(impactGO, .1f);
             }
         }
     }

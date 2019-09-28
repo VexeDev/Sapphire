@@ -131,7 +131,7 @@ MonoBehaviour:
   radius: 10
   newDamage: 40
   fancyEventSystem: {fileID: 0}
-  waitTime: 4
+  explodeAfterAudio: 0.75
 --- !u!82 &5947897239599517221
 AudioSource:
   m_ObjectHideFlags: 0

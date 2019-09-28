@@ -2475,7 +2475,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2502,7 +2502,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 4713071210051981776}
   attackDistance: 3
-  viewDistance: 20
+  viewDistance: 10
   head: {fileID: 4713071208616518753}
   viewAngle: 360
   attackTime: 1.2
@@ -2541,9 +2541,12 @@ MonoBehaviour:
   isShield: 0
   isShieldGenerator: 0
   shieldGenerator: {fileID: 0}
+  shield: {fileID: 0}
   bruteWeapon: {fileID: 4713071210345618237}
   fist1: {fileID: 0}
   fist2: {fileID: 0}
+  shouldResetDestination: 1
+  shieldBreakClip: {fileID: 0}
 --- !u!65 &4713071210051981780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2880,8 +2883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   damageCooldown: 1.4
-  eventSystem: {fileID: 6992781887141523935, guid: 29da0dff7082f37439f6ca8be1b25d9e,
-    type: 3}
 --- !u!1 &4713071210356290800
 GameObject:
   m_ObjectHideFlags: 0

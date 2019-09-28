@@ -23,6 +23,8 @@ public class Grenade : MonoBehaviour
 
     public GameObject fancyEventSystem;
 
+    public float explodeAfterAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,14 +40,14 @@ public class Grenade : MonoBehaviour
         {
             hasExploded = true;
             audioSource.Play();
-            StartCoroutine(wait2(0.4f));
+            StartCoroutine(wait2(explodeAfterAudio));
         }
 
         if (health <= 0f)
         {
             hasExploded = true;
             audioSource.Play();
-            StartCoroutine(wait2(0.4f));
+            StartCoroutine(wait2(explodeAfterAudio));
         }
     }
 

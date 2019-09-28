@@ -1313,7 +1313,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 1003414465043717674}
   attackDistance: 1.4
-  viewRadius: 20
+  viewRadius: 15
   attackTime: 0.6
   attackingShield: 0
 --- !u!114 &110697230060903855
@@ -1335,9 +1335,12 @@ MonoBehaviour:
   isShieldGenerator: 0
   shieldGenerator: {fileID: 5609927312449290480, guid: 2d684ab0dd7a92140a96b69fd495d509,
     type: 3}
+  shield: {fileID: 0}
   bruteWeapon: {fileID: 0}
   fist1: {fileID: 1003414465419759225}
   fist2: {fileID: 1003414465836457023}
+  shouldResetDestination: 1
+  shieldBreakClip: {fileID: 0}
 --- !u!65 &8661045720245705446
 BoxCollider:
   m_ObjectHideFlags: 0

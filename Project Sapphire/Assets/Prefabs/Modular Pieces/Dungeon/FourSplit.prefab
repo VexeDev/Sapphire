@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 2257533433855941540}
   - component: {fileID: 2257533433856940516}
   - component: {fileID: 3238494394421743842}
+  - component: {fileID: 194017309839464608}
   m_Layer: 0
   m_Name: Dungeon.Post
   m_TagString: Untagged
@@ -273,6 +274,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3359846, y: 4.01097, z: 1.3359853}
   m_Center: {x: 0, y: 2.0054846, z: 0.0000004172325}
+--- !u!208 &194017309839464608
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2257533433859196838}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.66800004, y: 2.005, z: 0.66800004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.005, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7227716790471744244
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +338,7 @@ GameObject:
   - component: {fileID: 6257797300425052916}
   - component: {fileID: 6330567212923932780}
   - component: {fileID: 6711878244058902725}
+  - component: {fileID: 2388616514720799116}
   m_Layer: 0
   m_Name: Dungeon.Post (1)
   m_TagString: Untagged
@@ -400,6 +418,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3359846, y: 4.01097, z: 1.3359853}
   m_Center: {x: 0, y: 2.0054846, z: 0.0000004172325}
+--- !u!208 &2388616514720799116
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667349256990307542}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.66800004, y: 2.005, z: 0.66800004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.005, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8544629157273165478
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,6 +446,7 @@ GameObject:
   - component: {fileID: 5701911418050733589}
   - component: {fileID: 6850447270320460270}
   - component: {fileID: 8202516701038370474}
+  - component: {fileID: 7453614855569303760}
   m_Layer: 0
   m_Name: Dungeon.Post (2)
   m_TagString: Untagged
@@ -491,6 +526,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3359846, y: 4.01097, z: 1.3359853}
   m_Center: {x: 0, y: 2.0054846, z: 0.0000004172325}
+--- !u!208 &7453614855569303760
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544629157273165478}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.66800004, y: 2.005, z: 0.66800004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.005, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8649680979478902837
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +554,7 @@ GameObject:
   - component: {fileID: 8777651973311239755}
   - component: {fileID: 8792124221192700237}
   - component: {fileID: 1543193611261561266}
+  - component: {fileID: 2507022531497691756}
   m_Layer: 0
   m_Name: TwoSplit
   m_TagString: Untagged
@@ -582,3 +634,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3359846, y: 4.01097, z: 1.3359853}
   m_Center: {x: 0, y: 2.0054846, z: 0.0000004172325}
+--- !u!208 &2507022531497691756
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8649680979478902837}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.66800004, y: 2.005, z: 0.66800004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.005, z: 0}
+  m_TimeToStationary: 0.5
