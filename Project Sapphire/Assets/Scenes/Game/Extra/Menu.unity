@@ -3039,7 +3039,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 00.2.2a
+  m_Text: Version 00.2.3a
 --- !u!224 &3880053368759901131
 RectTransform:
   m_ObjectHideFlags: 0
